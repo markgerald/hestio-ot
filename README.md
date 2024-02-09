@@ -20,7 +20,7 @@ Create a bucket in the us-east-1 region, with any name such as "our-backend-stat
 First, you need to generate an SSH key that will be used by the EC2 instances for secure SSH access. Run the following command:
 
 ```bash 
-ssh-keygen -t rsa -b 2048 -f modules/ec2_instances/terraform-ec2-key
+ssh-keygen -t rsa -b 2048 -f modules/ec2_instances/hestio-terraform-ec2-key
 ```
 
 This command generates a new SSH key pair in the `modules/ec2_instances/` directory. Keep the private key safe and secure.
