@@ -11,6 +11,10 @@ Before you begin, ensure you have the following installed:
 -   AWS CLI, configured with appropriate credentials
 -   OpenTofu CLI (`tofu`)
 
+## Step 0: Create a Bucket on console or Cli
+
+Create a bucket in the us-east-1 region, with any name such as "our-backend-state-bucket" for use in the configuration of remote backend.
+
 ## Step 1: Generate an SSH Key
 
 First, you need to generate an SSH key that will be used by the EC2 instances for secure SSH access. Run the following command:
@@ -28,7 +32,7 @@ Initialize your Terraform project with OpenTofu. This step prepares your project
 Run the following command:
 
 ```bash 
-tofu init -backend-config="bucket=terraform-state-hestion" -backend-config="key=dev/tofu.tfstate" -backend-config="region=us-east-1"
+tofu init -backend-config="bucket=our-backend-state-bucket" -backend-config="key=dev/tofu.tfstate" -backend-config="region=us-east-1"
 ``` 
 
 This initializes the Terraform backend to store the state file in an S3 bucket named `terraform-state-hestion` in the `us-east-1` region.
