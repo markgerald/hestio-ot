@@ -77,10 +77,10 @@ No providers.
 
 ## Modules
 
-| Name | Source | Version |
-|------|--------|---------|
-| <a name="module_ec2_instances"></a> [ec2\_instances](#module\_ec2\_instances) | ./modules/ec2_instances | n/a |
-| <a name="module_vpc"></a> [vpc](#module\_vpc) | ./modules/vpc | n/a |
+| Name                                                                                                                                    | Source | Version |
+|-----------------------------------------------------------------------------------------------------------------------------------------|--------|---------|
+| <a name="module_ec2_instances"></a> [ec2\_instances](https://github.com/markgerald/hestio-ot/blob/main/modules/ec2_instances/README.md) | ./modules/ec2_instances | n/a |
+| <a name="module_vpc"></a> [vpc](https://github.com/markgerald/hestio-ot/blob/main/modules/vpc/README.md)                                | ./modules/vpc | n/a |
 
 ## Resources
 
