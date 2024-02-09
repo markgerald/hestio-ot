@@ -64,3 +64,35 @@ tofu apply plan.out
 ``` 
 
 This command applies the plan saved in `plan.out`. Confirm the action when prompted to proceed with the infrastructure creation.
+<!-- BEGIN_TF_DOCS -->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.0 |
+
+## Providers
+
+No providers.
+
+## Modules
+
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_ec2_instances"></a> [ec2\_instances](#module\_ec2\_instances) | ./modules/ec2_instances | n/a |
+| <a name="module_vpc"></a> [vpc](#module\_vpc) | ./modules/vpc | n/a |
+
+## Resources
+
+No resources.
+
+## Inputs
+
+No inputs.
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| <a name="output_public_instance_ip"></a> [public\_instance\_ip](#output\_public\_instance\_ip) | The public IP address of the main instance |
+<!-- END_TF_DOCS -->

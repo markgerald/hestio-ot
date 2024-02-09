@@ -28,16 +28,16 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | n/a | `any` | n/a | yes |
-| <a name="input_private_subnet_id"></a> [private\_subnet\_id](#input\_private\_subnet\_id) | n/a | `any` | n/a | yes |
-| <a name="input_public_subnet_id"></a> [public\_subnet\_id](#input\_public\_subnet\_id) | n/a | `any` | n/a | yes |
-| <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | n/a | `any` | n/a | yes |
+| <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | The instance type | `string` | n/a | yes |
+| <a name="input_private_subnet_id"></a> [private\_subnet\_id](#input\_private\_subnet\_id) | The private subnet ID | `string` | n/a | yes |
+| <a name="input_public_subnet_id"></a> [public\_subnet\_id](#input\_public\_subnet\_id) | The public subnet ID | `string` | n/a | yes |
+| <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | The VPC ID | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| <a name="output_private_instance_id"></a> [private\_instance\_id](#output\_private\_instance\_id) | n/a |
-| <a name="output_public_instance_id"></a> [public\_instance\_id](#output\_public\_instance\_id) | n/a |
-| <a name="output_public_instance_ip"></a> [public\_instance\_ip](#output\_public\_instance\_ip) | n/a |
+| <a name="output_private_instance_id"></a> [private\_instance\_id](#output\_private\_instance\_id) | The ID of the private instance |
+| <a name="output_public_instance_id"></a> [public\_instance\_id](#output\_public\_instance\_id) | The ID of the public instance |
+| <a name="output_public_instance_ip"></a> [public\_instance\_ip](#output\_public\_instance\_ip) | The public IP of the public instance |
 <!-- END_TF_DOCS -->
