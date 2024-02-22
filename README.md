@@ -50,7 +50,7 @@ tofu workspace new dev
 Generate an execution plan for Terraform. This step allows you to review the changes that will be made to your infrastructure before applying them.
 
 ```bash 
-tofu plan -out "plan.out"
+TF_VAR_vpc_cidr="10.0.0.0/16" TF_VAR_public_subnet_cidr="10.0.1.0/24" TF_VAR_private_subnet_cidr="10.0.2.0/24" tofu plan -out "plan.out"
 ```
 
 This command saves the plan to a file named `plan.out`. Review this plan to ensure it matches your expected infrastructure changes.
@@ -77,10 +77,10 @@ No providers.
 
 ## Modules
 
-| Name                                                                                                                                    | Source | Version |
-|-----------------------------------------------------------------------------------------------------------------------------------------|--------|---------|
-| <a name="module_ec2_instances"></a> [ec2\_instances](https://github.com/markgerald/hestio-ot/blob/main/modules/ec2_instances/README.md) | ./modules/ec2_instances | n/a |
-| <a name="module_vpc"></a> [vpc](https://github.com/markgerald/hestio-ot/blob/main/modules/vpc/README.md)                                | ./modules/vpc | n/a |
+| Name | Source | Version |
+|------|--------|---------|
+| <a name="module_ec2_instances"></a> [ec2\_instances](#module\_ec2\_instances) | ./modules/ec2_instances | n/a |
+| <a name="module_vpc"></a> [vpc](#module\_vpc) | ./modules/vpc | n/a |
 
 ## Resources
 
@@ -88,7 +88,11 @@ No resources.
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_private_subnet_cidr"></a> [private\_subnet\_cidr](#input\_private\_subnet\_cidr) | The CIDR block for the private subnet | `any` | n/a | yes |
+| <a name="input_public_subnet_cidr"></a> [public\_subnet\_cidr](#input\_public\_subnet\_cidr) | The CIDR block for the public subnet | `any` | n/a | yes |
+| <a name="input_vpc_cidr"></a> [vpc\_cidr](#input\_vpc\_cidr) | The CIDR block for the VPC | `any` | n/a | yes |
 
 ## Outputs
 
